@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteSphere - IT Blog</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f4f6f9;
+            color:#333;
+            line-height:1.6;
+        }
+
+        header{
+            background:#0f172a;
+            color:#fff;
+            padding:20px 60px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        header h1{
+            color:#38bdf8;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:#fff;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#38bdf8;
+        }
+
+        .hero{
+            background:linear-gradient(to right,#1e293b,#0f172a);
+            color:white;
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        .hero h2{
+            font-size:42px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            font-size:18px;
+            max-width:700px;
+            margin:auto;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:40px auto;
+            display:grid;
+            grid-template-columns:3fr 1fr;
+            gap:30px;
+        }
+
+        .blog-post{
+            background:white;
+            margin-bottom:25px;
+            border-radius:10px;
+            overflow:hidden;
+            box-shadow:0 3px 8px rgba(0,0,0,.1);
+        }
+
+        .blog-post img{
+            width:100%;
+            height:250px;
+            object-fit:cover;
+        }
+
+        .content{
+            padding:20px;
+        }
+
+        .content h3{
+            margin-bottom:10px;
+            color:#0f172a;
+        }
+
+        .content p{
+            margin-bottom:15px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#0ea5e9;
+            color:white;
+            padding:10px 20px;
+            border-radius:5px;
+            text-decoration:none;
+        }
+
+        .btn:hover{
+            background:#0284c7;
+        }
+
+        aside{
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 3px 8px rgba(0,0,0,.1);
+            height:fit-content;
+        }
+
+        aside h3{
+            margin-bottom:15px;
+            color:#0f172a;
+        }
+
+        aside ul{
+            list-style:none;
+        }
+
+        aside li{
+            margin:12px 0;
+        }
+
+        aside a{
+            text-decoration:none;
+            color:#0ea5e9;
+        }
+
+        footer{
+            background:#0f172a;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+
+        @media(max-width:768px){
+
+            .container{
+                grid-template-columns:1fr;
+            }
+
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            nav ul{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .hero h2{
+                font-size:30px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>TechSphere</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Programming</a></li>
+            <li><a href="#">Cyber Security</a></li>
+            <li><a href="#">Cloud</a></li>
+            <li><a href="#">AI & ML</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="hero">
+
+    <h2>Welcome to TechSphere</h2>
+
+    <p>
+        Your daily source for programming tutorials, AI, cloud computing,
+        cybersecurity, software development, and the latest technology news.
+    </p>
+
+</section>
+
+<div class="container">
+
+    <main>
+
+        <article class="blog-post">
+
+            <img src="https://via.placeholder.com/900x250" alt="Blog Image">
+
+            <div class="content">
+
+                <h3>Getting Started with Artificial Intelligence</h3>
+
+                <p>
+                    Learn the fundamentals of Artificial Intelligence,
+                    Machine Learning, and Deep Learning with beginner-friendly
+                    examples and practical projects.
+                </p>
+
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+
+        </article>
+
+        <article class="blog-post">
+
+            <img src="https://via.placeholder.com/900x250" alt="Blog Image">
+
+            <div class="content">
+
+                <h3>Top 10 HTML5 Features Every Web Developer Should Know</h3>
+
+                <p>
+                    Discover semantic elements, multimedia support,
+                    local storage, canvas, geolocation, and other powerful
+                    HTML5 features.
+                </p>
+
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+
+        </article>
+
+        <article class="blog-post">
+
+            <img src="https://via.placeholder.com/900x250" alt="Blog Image">
+
+            <div class="content">
+
+                <h3>Cloud Computing Explained for Beginners</h3>
+
+                <p>
+                    Understand AWS, Microsoft Azure, and Google Cloud,
+                    deployment models, and how cloud computing powers
+                    modern applications.
+                </p>
+
+                <a href="#" class="btn">Read More</a>
+
+            </div>
+
+        </article>
+
+    </main>
+
+    <aside>
+
+        <h3>Categories</h3>
+
+        <ul>
+            <li><a href="#">HTML & CSS</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Python</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">AI & Machine Learning</a></li>
+            <li><a href="#">Cyber Security</a></li>
+            <li><a href="#">Cloud Computing</a></li>
+            <li><a href="#">DevOps</a></li>
+        </ul>
+
+        <br>
+
+        <h3>Recent Posts</h3>
+
+        <ul>
+            <li><a href="#">Introduction to React</a></li>
+            <li><a href="#">Docker Basics</a></li>
+            <li><a href="#">REST API Tutorial</a></li>
+            <li><a href="#">Git & GitHub Guide</a></li>
+        </ul>
+
+    </aside>
+
+</div>
+
+<footer>
+
+    <p>
+        © 2026 ByteSphere | All Rights Reserved
+    </p>
+
+</footer>
+
+</body>
+      </html>
