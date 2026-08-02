@@ -163,3 +163,28 @@
             }
 
         }
+
+        /* Container sizing */
+.search-container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+/* Search Input Styling */
+#blog-search {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 25px; /* Rounded corners */
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* Highlight border on click */
+#blog-search:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
