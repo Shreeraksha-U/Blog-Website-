@@ -188,3 +188,19 @@
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
 }
 
+/* dark mode light mode */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+}
+
+body.dark-mode {
+  --bg-color: #222222;
+  --text-color: #e6e6e6;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
